@@ -14,7 +14,7 @@
     <p>here's a record of what information you submitted:</p>
 
     <p>
-      First name: <?php echo $first_name . " " . $last_name; ?><br />
+      Name: <?php echo $first_name . " " . $last_name; ?><br />
       Email: <?php echo $email; ?><br />
       Facebook URL: <?php echo $facebook_url; ?><br />
       Twitter Handle: <?php echo $twitter_handle; ?><br />
