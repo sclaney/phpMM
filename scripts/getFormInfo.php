@@ -8,6 +8,13 @@
     $facebook_url = "https://facebook.com/" . $facebook_url;
   }
   $twitter_handle = $_REQUEST['twitter_handle'];
+  $twitter_url = "https://twitter.com/";
+  $position = strpos)$twitter_handle, "@";
+  if ($position === false) {
+    $twitter_url = $twitter_url . $twitter_handle;
+  } else {
+    $twitter_url = $twitter_url . substr($twitter_handle, $position + 1);
+  }
 ?>
 
 <html>
@@ -21,7 +28,7 @@
       Name: <?php echo $first_name . " " . $last_name; ?><br />
       Email: <?php echo $email; ?><br />
       <a href = "<?php echo $facebook_url; ?>">Your Facebook Page</a><br />
-      Twitter Handle: <?php echo $twitter_handle; ?><br />
+      <a href="<?php echo $twitter_url ?>">Check out your Twitter feed</a><br />
     </p>
 
   </body>
