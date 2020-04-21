@@ -9,7 +9,7 @@
   }
   $twitter_handle = $_REQUEST['twitter_handle'];
   $twitter_url = "https://twitter.com/";
-  $position = strpos)$twitter_handle, "@";
+  $position = strpos($twitter_handle, "@");
   if ($position === false) {
     $twitter_url = $twitter_url . $twitter_handle;
   } else {
