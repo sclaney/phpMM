@@ -8,6 +8,10 @@
   if ($position === false) {
     $facebook_url = "https://facebook.com/" . $facebook_url;
   }
+  $position = strpos($facebook_url, "https://");
+  if ($position === false) {
+    $facebook_url = "https://" . "$facebook_url";
+  }
   $twitter_handle = trim($_REQUEST['twitter_handle']);
   $twitter_url = "https://twitter.com/";
   $position = strpos($twitter_handle, "@");
